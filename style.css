@@ -96,6 +96,8 @@ h1 {
   box-shadow: 0 4px 0 #9a6a12;
 }
 .wishlist:hover { background: #ffd966; }
+.wishlist.soon { margin: 0; cursor: default; }
+.wishlist.soon:hover { background: var(--gold); }
 .wishlist:active { transform: translateY(2px); box-shadow: 0 2px 0 #9a6a12; }
 .note {
   margin: 14px 0 0;
@@ -119,7 +121,7 @@ h1 {
 .feature img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -133,44 +135,6 @@ h1 {
 }
 .feature p { margin: 0; font-size: 16px; }
 
-/* A Season Ticket drawn in CSS: two stamps, four empty spaces. */
-.ticket-art {
-  aspect-ratio: 1;
-  border-radius: 10px;
-  background: var(--violet);
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  gap: 14px;
-  padding: 18% 12%;
-  position: relative;
-}
-.ticket-art::before {
-  content: "";
-  position: absolute;
-  inset: 26% 8%;
-  background: var(--cream);
-  border: 4px solid var(--gold-soft);
-  border-radius: 12px;
-  box-shadow: 0 0 0 3px var(--violet) inset;
-}
-.ticket-art span {
-  position: relative;
-  width: 22%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 4px solid #6b6272;
-  background: radial-gradient(circle, #6b6272 18%, transparent 20%);
-}
-.ticket-art span:nth-child(2) {
-  border-color: #4f8a3a;
-  background: linear-gradient(135deg, transparent 45%, #4f8a3a 45% 55%, transparent 55%);
-}
-.ticket-art span.empty {
-  border: 3px dashed #b8aac6;
-  background: none;
-}
 
 .about {
   margin-top: 64px;
