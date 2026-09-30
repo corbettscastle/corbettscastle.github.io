@@ -70,6 +70,7 @@ main {
   margin-top: 16px;
 }
 .capsule {
+  display: block;
   width: 100%;
   height: auto;
   border-radius: 14px;
