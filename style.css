@@ -161,10 +161,13 @@ h1 {
 .feature p { margin: 0; font-size: 16px; }
 
 
+.story,
 .about {
   margin-top: 64px;
   max-width: 720px;
 }
+.story { font-size: 19px; }
+.story h2,
 .about h2 {
   font-family: "Rye", serif;
   font-weight: 400;
