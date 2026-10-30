@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Corbett's Castle</title>
-  <meta name="description" content="Corbett's Castle is a tiny studio making carousel games. First up: Idle Carousel, a cozy idle game about keeping a carousel spinning.">
+  <meta name="description" content="Corbett's Castle is a tiny studio making carousel games. First up: Idle Carousel, a cozy idle game about an old park and its carousel. The free demo is out now on Steam.">
   <link rel="canonical" href="https://www.corbettscastle.com/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Corbett's Castle">
   <meta property="og:title" content="Idle Carousel, from Corbett's Castle">
-  <meta property="og:description" content="A cozy idle game about keeping a carousel spinning. Wishlist it on Steam!">
+  <meta property="og:description" content="You just took over an old park, and its carousel is ready to spin again! The free demo is out now on Steam.">
   <meta property="og:image" content="https://www.corbettscastle.com/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Idle Carousel: the carousel with its six animal mounts and their colored trails, the Idle Carousel sign, a Season Ticket and Stub the ticket.">
+  <meta property="og:image:alt" content="Idle Carousel: the purple and cream carousel with a Horse, a Giraffe and a Wolf on its poles, beside the Idle Carousel sign under a striped awning.">
   <meta property="og:url" content="https://www.corbettscastle.com/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,29 +32,61 @@
 
   <main>
     <section class="hero">
-      <video class="capsule" autoplay muted loop playsinline preload="auto" poster="images/carousel-spin-poster.jpg"
-             width="960" height="720" aria-label="The carousel spinning in the park, its six animal mounts sweeping autumn leaves and sticks away with soft colored trails, ticket booths and visitors around it.">
-        <source src="images/carousel-spin.webm" type="video/webm">
-        <source src="images/carousel-spin.mp4" type="video/mp4">
-      </video>
+      <picture>
+        <source media="(max-width: 700px)" srcset="images/capsule.webp" width="1232" height="706">
+        <img class="banner" src="images/banner.webp" width="1920" height="620"
+             alt="Idle Carousel: the purple and cream carousel rising under a striped awning, a Horse, a Giraffe and a Wolf on its poles, and the Idle Carousel sign.">
+      </picture>
       <div class="hero-text">
         <h1>Idle Carousel</h1>
-        <p class="pitch">You're the new owner of an old park, and its carousel is ready to spin again. But the park is buried in clutter: leaves, sticks, last season's trash, even bits of broken rides. Put animals on the carousel to sweep it away, earn Gold, and get the park ready for Opening Day.</p>
-        <!-- Until the Steam page is public, its link lands on Steam's front page. When it's live, swap in:
-             <a class="wishlist" href="https://store.steampowered.com/app/4094570/?utm_source=corbettscastle&amp;utm_campaign=site">Wishlist on Steam</a> -->
-        <p class="wishlist soon">Coming soon to Steam</p>
-        <p class="note">For Windows. Free demo coming soon, full game planned for March 2027.</p>
+        <p class="pitch">You just took over an old park, and its carousel is ready to spin again! In this cozy idle game, the animals on your carousel sweep away the clutter as they spin. Beat six bosses, watch the seasons change, and bring the park back to life.</p>
+        <div class="buttons">
+          <a class="steam-button" href="https://store.steampowered.com/app/4094570/Idle_Carousel/?utm_source=corbettscastle&amp;utm_campaign=site&amp;utm_content=demo">Play the free demo</a>
+          <a class="steam-button second" href="https://store.steampowered.com/app/4094570/Idle_Carousel/?utm_source=corbettscastle&amp;utm_campaign=site&amp;utm_content=wishlist">Wishlist on Steam</a>
+        </div>
+        <p class="note">For Windows. The free demo is out now on Steam; the full game is planned for March 2027.</p>
       </div>
     </section>
 
     <section class="trailer" aria-labelledby="trailer-title">
       <h2 id="trailer-title">Trailer</h2>
       <video controls playsinline preload="metadata" poster="images/trailer-poster.jpg" width="1920" height="1080"
-             aria-label="Idle Carousel's trailer: the park and its carousel under the logo, building the troupe, the Looks that make the ride yours, desktop mode and its park editor, three of the six bosses, restoring the park piece by piece, and the end card.">
+             aria-label="Idle Carousel's trailer: the park and its carousel under the logo, building the troupe, the looks that make the ride yours, desktop mode and its shop drawer, the bosses, restoring the park piece by piece, and the end card: the free demo is out now.">
         <source src="images/trailer.webm" type="video/webm">
         <source src="images/trailer.mp4" type="video/mp4">
       </video>
       <p class="trailer-note">Recorded in the game. Music: "Merry Go Slower" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0.</p>
+    </section>
+
+    <section class="game" aria-labelledby="game-title">
+      <h2 id="game-title">About the game</h2>
+      <p>Welcome to Idle Carousel! You're the new owner of an old park, and its carousel is ready to spin again. But the park is buried in clutter: leaves, sticks, last season's trash, even bits of broken rides. Let too much pile up and your carousel grinds to a halt! Earn Gold, upgrade your carousel, and bring new animals aboard to help clear the way to Opening Day. Stub, a very enthusiastic ticket, will show you around.</p>
+      <h3>Your carousel does the work</h3>
+      <p>At first, you'll handle a good bit of the cleanup yourself. Soon you'll have enough Gold to get some help! Horses earn Gold as they pass the ticket booths. Wolves sweep everything in their path. Giraffes reach clutter before it reaches you. Sloths slow clutter down. Elephants stomp hard near the rim. And Pandas earn Gold and patch your carousel up! Before long they'll be clearing the whole park without you.</p>
+      <h3>Features</h3>
+      <ul class="feature-list">
+        <li><b>Six animal mounts</b>, each with its own job, levels, and stars that change how it plays.</li>
+        <li><b>Six bosses</b>, from a swirling Leaf Storm to an overflowing trash bin and a stuck gearbox, each stamped on your Season Ticket.</li>
+        <li><b>Restore the park:</b> spend Park Supplies on lights, flower beds, food carts and more, and arrange them in the plaza you see every time you open the game.</li>
+        <li><b>A real ending, and more after it:</b> restore the park, then start new seasons with Golden Tickets to spend at the Prize Booth, replay seasons with twists for bigger rewards, or take on three tough Expert seasons.</li>
+        <li><b>Desktop mode:</b> shrink the game into a little round window that stays on top while you work. Open its drawer to buy mounts and upgrades without leaving it.</li>
+        <li><b>Idle-friendly:</b> earn Gold while you're away, and if your carousel stalls, you never lose Gold or upgrades.</li>
+      </ul>
+    </section>
+
+    <section class="shots" aria-labelledby="shots-title">
+      <h2 id="shots-title">Screenshots</h2>
+      <div class="gallery">
+        <a href="images/shot01.webp"><img src="images/shot01.webp" width="1600" height="900" loading="lazy" alt="The carousel up close: all six animal mounts on the purple ride, sweeping away leaves and logs."></a>
+        <a href="images/shot02.webp"><img src="images/shot02.webp" width="1600" height="900" loading="lazy" alt="A boss fight: the Overflowing Bin with its lid down at the carousel's rim, the ride glowing red as it runs low on health."></a>
+        <a href="images/shot03.webp"><img src="images/shot03.webp" width="1600" height="900" loading="lazy" alt="The park in summer, machine parts coming in from all around the carousel."></a>
+        <a href="images/shot04.webp"><img src="images/shot04.webp" width="1600" height="900" loading="lazy" alt="Park Upgrades on a park that's partly restored: the Picnic Table's card with its price and a Build button."></a>
+        <a href="images/shot05.webp"><img src="images/shot05.webp" width="1600" height="900" loading="lazy" alt="Desktop mode: the carousel in a small round window on a computer desktop, its shop drawer open beside it."></a>
+        <a href="images/shot06.webp"><img src="images/shot06.webp" width="1600" height="900" loading="lazy" alt="The park in winter: snow, frozen ponds, and the troupe at work on the carousel."></a>
+        <a href="images/shot07.webp"><img src="images/shot07.webp" width="1600" height="900" loading="lazy" alt="The Prize Booth: shelves of prizes to buy with Golden Tickets."></a>
+        <a href="images/shot08.webp"><img src="images/shot08.webp" width="1600" height="900" loading="lazy" alt="The restored park around a golden carousel: lights, flower beds, a fountain, a Ferris wheel and visitors."></a>
+        <a href="images/shot09.webp"><img src="images/shot09.webp" width="1600" height="900" loading="lazy" alt="The title screen over a restored park in spring, the whole troupe on the ride, with Continue and On desktop."></a>
+      </div>
     </section>
 
     <section class="story" aria-labelledby="story-title">
@@ -62,39 +94,6 @@
       <p>My daughters love carousels, so we're always riding them! A park, a festival, the mall, the zoo: if there's a carousel, we're on it.</p>
       <p>Every time we ride one, I'm thinking about how great they'd be in games. There haven't been many carousel games out there, so we're making our own.</p>
       <p>Idle games are our favorite, so that's naturally where we're starting. Idle Carousel is the first, and my favorite part is watching the old park come back to life. After this, we want to try carousel games in other genres too. Thanks for stopping by!</p>
-    </section>
-
-    <section class="features">
-      <article class="feature">
-        <img src="images/work.png" width="1200" height="900" loading="lazy" alt="The carousel from above with its troupe of animal mounts, each sweeping a faint colored trail, clutter coming in on every side and the shop's Mounts tab open.">
-        <h2>Your carousel does the work</h2>
-        <p>Early on you're clicking clutter away. Then a Wolf sweeps, a Giraffe reaches far out, a Sloth slows clutter down, an Elephant swats whatever gets close, and a Panda patches things up. Soon they're clearing the park without you.</p>
-      </article>
-      <article class="feature">
-        <img src="images/bosses.png" width="1200" height="900" loading="lazy" alt="A boss fight: the Overflowing Bin at the carousel's rim, trash spilling out, the screen glowing red as the ride runs low on health.">
-        <h2>Bosses that fight back</h2>
-        <p>Six bosses stand between you and a finished season, from a swirling Leaf Storm to an Overflowing Bin. They hit the carousel back, so build it tough before you take them on.</p>
-      </article>
-      <article class="feature">
-        <img src="images/park.png" width="1200" height="900" loading="lazy" alt="The restored park around the carousel: string lights, flower beds, a fountain, a Ferris wheel, teacups, stands and visitors.">
-        <h2>Restore the park</h2>
-        <p>Every season earns Park Supplies. Spend them to bring the old park back: string lights, flower beds, a fountain, a Ferris wheel, the teacups and more, one by one.</p>
-      </article>
-      <article class="feature">
-        <img src="images/seasons.png" width="1200" height="900" loading="lazy" alt="The Prize Booth: shelves of prizes to buy with Golden Tickets, from troupe skills and new looks to Season Boosts, Stub describing one at the bottom.">
-        <h2>Seasons and prizes</h2>
-        <p>Stamp every boss on your Season Ticket, then start a new season with Golden Tickets to spend at the Prize Booth: troupe skills, new looks and Season Boosts. Stub, a very excited ticket, shows you around.</p>
-      </article>
-      <article class="feature">
-        <img src="images/challenges.png" width="1200" height="900" loading="lazy" alt="The Challenges screen: how busy the park is, from a Quiet Day to Sold Out, each step with its Crowd, its rules and the Golden Tickets it pays.">
-        <h2>Challenges and the Crowd</h2>
-        <p>Want it harder? Pick how busy the park is, from a Quiet Day to Sold Out. A busier park brings tougher rules, like stronger bosses or a tighter budget, and pays more Golden Tickets.</p>
-      </article>
-      <article class="feature">
-        <img src="images/desktop.png" width="1200" height="900" loading="lazy" alt="Desktop mode: the carousel in a small round window on a computer desktop, a popcorn cart and a balloon seller beside it.">
-        <h2>Keep it on your desktop</h2>
-        <p>Desktop mode shrinks the game into a little round window you can leave spinning in a corner while you work.</p>
-      </article>
     </section>
 
     <section class="about">
